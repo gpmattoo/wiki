@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="publisher" default="all" basedir=".">
+	<property name="mysql.params" value="-u wiki -p1234 -D wiki" />
+  <target name="all" depends="cleandb, createdb, insertdb"></target>
+
+  <target name="cleandb">
+     <exec executable="mysql" input="cleandb.sql">
+        <arg line="${mysql.params}" />
+     </exec>
+  </target>
+
+  <target name="createdb">
+     <exec executable="mysql" input="createdb.sql">
+        <arg line="${mysql.params}" />
+     </exec>
+  </target>
+
+  <target name="insertdb">
+     <exec executable="mysql" input="insertdb.sql">
+        <arg line="${mysql.params}" />
+     </exec>
+  </target>
+</project>
