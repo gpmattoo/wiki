@@ -1,0 +1,12 @@
+<Context path="/wiki" docBase="/home/tom/workspace/wiki/web">
+    <Resource name="datasource"  
+              type="javax.sql.DataSource"
+              auth="Container"
+              maxActive="10"
+              maxIdle="3" 
+              maxWait="10000"
+              username="wiki" 
+              password="1234" 
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/wiki?autoReconnect=true" />
+</Context>

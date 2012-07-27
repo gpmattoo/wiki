@@ -1,0 +1,20 @@
+h1 {
+   color: #000088;
+}
+
+#layout {
+	margin: 1em;
+}
+
+#upper-menu {
+	margin: 0.5em;
+	text-align: right;
+}
+
+#upper-bar {
+	background-color: #E6E6FA;	
+}
+
+#lower-bar {
+	background-color: #F5F5DC;	
+}
