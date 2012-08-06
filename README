@@ -1,2 +1,1 @@
-July 22 3:20 PM : Created the DB and scripts for the wiki application
-pick up with ch 15 - presistence classes
+Wiki app lets you create editable pages with html and publish them to an RSS news feed. Uses REST web services to send xml data between this application and the News Feed Publisher application.
